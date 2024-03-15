@@ -16,7 +16,7 @@
 }
 
 body, html {
-    background-image: linear-gradient(to top,  #38400193, #034c7991);
+    background-image: linear-gradient(to top,  #f3d6bd77, #004370);
     height: 100vh;
     width: 100vw;
 }
@@ -37,7 +37,7 @@ section#login {
     position: absolute;
     background-color: white;
     width: 270px;
-    height: 500px;
+    height: 535px;
     border-radius: 20px;
     top: 50%;
     left: 50%;
