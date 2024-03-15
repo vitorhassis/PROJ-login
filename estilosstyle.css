@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+/*
+-----------------------
+pequenas telas = ate 600px
+
+celular = de 600 ate 768px
+
+tablet = 768 a 992px
+
+desktop = 992 ate 1200px
+
+grandes telas = acima de 1200px
+----------------------
+*/
+
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    section#login {
+        width: 90vw;
+    }
+
+    
+
+    section#login >div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+   
+
+   }
