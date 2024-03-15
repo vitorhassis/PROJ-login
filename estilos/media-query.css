@@ -4,7 +4,7 @@
 @media screen and (min-width: 768px) and (max-width:992px) {
 
     body {
-        background-image: linear-gradient(to top, #6e720091, #3B6D8C); /*fizemos um gradient aq no tablet, exatamente por ser tablet e ter uma capacidade de processar esse tipo de recurso melhor do que um celular, por exemplo. */
+        background-image: linear-gradient(to top,  #505207a4, #4187b3); /*fizemos um gradient aq no tablet, exatamente por ser tablet e ter uma capacidade de processar esse tipo de recurso melhor do que um celular, por exemplo. */
     }
 
     section#login {
@@ -26,21 +26,21 @@
 
 @media screen and (min-width:992px) {
     body {
-        background-image: linear-gradient(to top, #6e720091, #3B6D8C);
+        background-image: linear-gradient(to top,  #505207a4, #4187b3);
     }
 
     section#login {
-        width: 950px;
+        width: 990px;
     }
 
     section#login > div#imagem {
-        float: left;
-        width: 40%;
+        float: right;
+        width: 60%;
         height: 100%;
     }
 
     section#login > div#formulario {
-        float: right;
-        width: 60%;
+        float: left;
+        width: 40%;
     }
 }

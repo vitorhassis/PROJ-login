@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -17,15 +19,42 @@
             </div>
             <div id="formulario">
                 <h1>login</h1>
-                <p>seja bem-vindo novamente. faca login para acessar sua conta e poder fazer as configuracoes no seu
-                    ambiente</p>
-                <form action="login.php" method="post">
-
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
+                    ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">Person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required
+                            maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">Key</span>
+                        <input type="password" name="Senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required
+                            minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci a senha</a>
                 </form>
-
             </div>
         </section>
+<!--- PARA A CRIACAO DO FORMULARIO =
+1 - fizemos duas div's, uma para login e uma para senha;
+2 - colocamos a tag "label", sendo no for voce coloca ="i-palavra", sendo essa palavra a qual vai ficar antes da
+caixinha;
+3 - voce coloca o input, nesse caso, o primeiro vai ser o input email, em name vc coloca a palavra normal, e em ID voce
+coloca = "i-palavra". porque? para ter a ligacao entre label e o input. o PLACEHOLDER voce coloca a mensagem que fica de
+fundo dentro da caixinha. basicamente isso! nesse caso, o label ficou depois do input, pq queremos que eles fiquem
+depois do espaco para preencher.
+4 - colocamos o autocomplete on la no form, para conseguir adicionar os autocomplet's no email e senha. no caso do email, autocomplete email e na senha, autocomplete current-password
+5 - fizemos um link para direcionar caso esquecer a senha, e colocamos um icon
+6 - adicionamos o  required no email e na senha, para ele te obrigar a colocar algo ali dentro, e tbm um min e max length de caracteres--->
+
+<!--- para add os icons do lado dos formularios, fomos no site icons do google, pesquisa o icon desejado e copia e cola la em cima, junto com os links de css, o que estiver no campo de STATIC ICON FONT. ao fazer isso, vc copia a parte de baixo, ISERTING THE ICON, e cola onde voce quer colocar. para add o icon que voce quiser, so colocar o nome dele la na pag de icons anterior-->
     </main>
+
+
 
 </body>
 
