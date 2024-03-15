@@ -16,7 +16,7 @@
 }
 
 body, html {
-    background-image: linear-gradient(to top,  #505207a4, #034b79);
+    background-image: linear-gradient(to top,  #38400193, #034c7991);
     height: 100vh;
     width: 100vw;
 }
@@ -41,12 +41,11 @@ section#login {
     border-radius: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*borda arredondada na img*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.815); /*esse 0px 0px indica que vai ser uma sombra sem estar direcionada para um lado ou o outro*/
-
     transition: width 0.3s, height 0.3s; /*transicao bem legal*/
     -moz-transition-timing-function: ease; /*da uma suavizada na transicao de cima*/
+    transform: translate(-50%, -50%);
 
     
 }
@@ -73,21 +72,44 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
-    font-size: 0.8em;
+    font-size: 1em;
+    padding-bottom: 7px;
 }
 
 form > div.campo {
     background-color: #f8c59928;
-    border: 1px solid #202020;
+
+    border: 2px solid #202020;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span { /*centralizar e config o icon*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input { /*config da div campo, onde digita email e a senha, nesse caso obv*/
+    font-size: 1em;
+    width: calc(100% - 44px); /*esse cal eh oq faz ter esse encaixe perfeito*/
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px); /*SEMPRE DEIXAR O TRANSFORM POR ULTIMO, PRA EVITAR ERROS*/
+}
+
+div.campo > input:focus-within { /*essa tag, eh para qnd vc estiver digitando dentro do campo, mudancas que podem ocorrer ao clicar para digitar dentro do campo*/
+    border: none; /*n deu pra tirar essa borda q fica qnd clica, eh do navegador*/
+     
 }
 
 

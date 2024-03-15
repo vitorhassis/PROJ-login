@@ -1,14 +1,15 @@
 @charset "UTF-8";
 
 
-@media screen and (min-width: 768px) and (max-width:992px) {
+@media screen and (min-width: 768px) and (max-width:992px) /*CONFIG TABLET*/ {
 
     body {
-        background-image: linear-gradient(to top,  #505207a4, #4187b3); /*fizemos um gradient aq no tablet, exatamente por ser tablet e ter uma capacidade de processar esse tipo de recurso melhor do que um celular, por exemplo. */
+        background-image: linear-gradient(to top,  #38400193, #034c7991); /*fizemos um gradient aq no tablet, exatamente por ser tablet e ter uma capacidade de processar esse tipo de recurso melhor do que um celular, por exemplo. */
     }
 
     section#login {
         width: 90%;
+        height: 350px;
     }
 
     section#login > div#imagem {
@@ -26,7 +27,7 @@
 
 @media screen and (min-width:992px) {
     body {
-        background-image: linear-gradient(to top,  #505207a4, #4187b3);
+        background-image: linear-gradient(to top,  #38400193, #034c7991);
     }
 
     section#login {
@@ -43,4 +44,5 @@
         float: left;
         width: 40%;
     }
+
 }
