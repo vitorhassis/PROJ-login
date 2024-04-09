@@ -1,2 +1,2 @@
 # projetologin
- projeto tela de login
+ projeto que simula uma tela de login
