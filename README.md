@@ -2,6 +2,6 @@
 
 ###
 
-<p align="left">Minha primeira Tela de Login, utilizando HTML CSS</p>
+<p align="center">Minha primeira Tela de Login, utilizando HTML CSS</p>
 
 ###
